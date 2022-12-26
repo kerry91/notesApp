@@ -4,7 +4,15 @@ My database is Microsoft Azure SQL database utilisng Microsoft drivers for PHP a
 
 ![note1](https://user-images.githubusercontent.com/36702039/209578628-74685f7c-07a4-4c3b-beae-bd155469448b.png)
 This is the index view after adding a new note.
-<br/>
+
 ![notesDb1](https://user-images.githubusercontent.com/36702039/209578887-b6cef8c0-c309-4060-9c4d-aa65afcc6e06.png)
 This is the database view of the notes table
+
+![noteEdit1](https://user-images.githubusercontent.com/36702039/209579007-a5c43107-ce62-4975-abbf-b6a78d55f504.png)
+This is the edit note view
+
+![noteEditResult1](https://user-images.githubusercontent.com/36702039/209579083-6ddb2324-0c09-4295-b88a-99c41f73f1d7.png)
+This is the index page with the update note
+
+
 
