@@ -2,6 +2,8 @@ This project was a guided project from Coursera https://www.coursera.org/project
 
 My database is Microsoft Azure SQL database utilisng Microsoft drivers for PHP and SQl server.
 
+![Building a Dynamic Web App using PHP   MySQL KAW](https://user-images.githubusercontent.com/36702039/209579276-f327d2de-755c-4ced-8919-7beb2fd3ded0.png)
+
 ![note1](https://user-images.githubusercontent.com/36702039/209578628-74685f7c-07a4-4c3b-beae-bd155469448b.png)
 This is the index view after adding a new note.
 
