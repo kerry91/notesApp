@@ -1,5 +1,5 @@
 <?php
-
+require_once('includes/db.php');
 ?>
 
 <!DOCTYPE html>
@@ -30,3 +30,5 @@
     <input type="submit" />
   </form>
 </html>
+
+<?php require_once('includes/footer.php'); ?>

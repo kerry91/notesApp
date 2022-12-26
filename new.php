@@ -1,23 +1,38 @@
 <?php
-    $servername = '100.115.92.195';
-    $username = 'kaw';
-    $password = 'kaw';
-    $dbname = 'notes';
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
-    if (!$conn){
-        die('Connection Failed' .mysqli_connect_error());
-    }
-    
-    if($_SERVER['REQUEST_METHOD'] ==  'POST'){
-        $title = $_POST['title'];
-        $content = $_POST['content'];
-        $important = $_POST['important'];
+require_once('includes/db.php');
+  ?>
+  
+  <?php
+  
+  function formatErrors($errors)
+  {
+      // Display errors
+      echo "<h1>SQL Error:</h1>";
+      echo "Error information: <br/>";
+      foreach ($errors as $error) {
+          echo "SQLSTATE: ". $error['SQLSTATE'] . "<br/>";
+          echo "Code: ". $error['code'] . "<br/>";
+          echo "Message: ". $error['message'] . "<br/>";
+      }
+  }
 
-        echo $title;
-        echo $content;
-        echo $important;
+  if($_SERVER['REQUEST_METHOD'] ==  'POST'){
+    $title = $_POST['title'];
+    $content = $_POST['content'];
+    $important = $_POST['important'];
 
-    }
+    $sql = "INSERT INTO notes (title, content, important)
+VALUES ('$title', '$content', '$important')";
+
+if(sqlsrv_query($conn, $sql)) {
+  echo "New record created successfully";
+}
+
+}
+
+/*INSERT INTO tablename (columns) VALUES (values)*/
+//INSERT INTO notes ('title', 'content', 'important') VALUES ('$title', '$content', '$important')
+  
 ?>
 
 <!DOCTYPE html>
@@ -50,3 +65,5 @@
             
         <input type="submit" />
 </html>
+
+<?php require_once('includes/footer.php'); ?>
