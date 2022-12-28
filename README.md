@@ -1,6 +1,6 @@
 This project was a guided project from Coursera https://www.coursera.org/projects/dynamic-web-app-php-mysql
 
-My database is Microsoft Azure SQL database utilisng Microsoft drivers for PHP and SQl server.
+My database is Microsoft Azure SQL database utilisng Microsoft drivers for PHP and SQL server.
 
 ![Building a Dynamic Web App using PHP   MySQL KAW](https://user-images.githubusercontent.com/36702039/209579276-f327d2de-755c-4ced-8919-7beb2fd3ded0.png)
 
